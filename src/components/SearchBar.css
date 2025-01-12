@@ -1,0 +1,83 @@
+.search-bar-container {
+    position: relative;
+    width: 100%; /* Ensure the container takes the full width of its parent */
+    max-width: 400px; /* Match the max-width of the search bar */
+    margin: 20px auto; /* Center the container */
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  body.dark-mode .search-bar {
+    background-color: #333; /* Dark background for search bar */
+  }
+  
+  .search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1em;
+    background: none; /* Ensure no background for input */
+    color: inherit; /* Inherit text color */
+  }
+  
+  .search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding:  0 0rem 0 0; /* Remove padding */
+    font-size: 1.2em;
+    color: #4a90e2;
+    transition: color 0.3s ease;
+  }
+  
+  body.dark-mode .search-bar button {
+    color: #bb86fc; /* Color for icons in dark mode */
+  }
+  
+  .clear-button {
+    margin-right: 10px;
+  }
+  
+  .suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%; /* Make the dropdown the same width as the search bar */
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+  }
+  
+  body.dark-mode .suggestions {
+    background: #333; /* Dark background for suggestions */
+    border: 1px solid #555; /* Dark border for suggestions */
+  }
+  
+  .suggestions li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .suggestions li:hover {
+    background: #f4f4f9;
+  }
+  
+  body.dark-mode .suggestions li:hover {
+    background: #444; /* Dark background for hovered suggestion */
+  }

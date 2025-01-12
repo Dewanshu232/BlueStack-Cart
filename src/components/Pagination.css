@@ -1,0 +1,33 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  background-color: rgba(74, 144, 226, 0.8); /* Semi-transparent background */
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  backdrop-filter: blur(10px); /* Add blur effect */
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: rgba(53, 122, 184, 0.8);
+}
+
+.pagination span {
+  margin: 0 10px;
+  font-size: 1.2em;
+  color: #333; /* Gray text color */
+}

@@ -1,0 +1,12 @@
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: white;
+  padding: 0; /* Remove padding */
+}
+
+body.dark-mode .theme-toggle {
+  color: #e0e0e0; /* Light gray color for the icon in dark mode */
+}

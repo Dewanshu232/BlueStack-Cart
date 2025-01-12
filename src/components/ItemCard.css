@@ -1,0 +1,135 @@
+.card {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  backdrop-filter: blur(10px); /* Add blur effect */
+  color: #333; /* Gray text color */
+}
+
+body.dark-mode .card {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #e0e0e0;
+}
+
+.card-image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Adjust height as needed */
+}
+
+.card-image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.card:hover .card-image {
+  transform: scale(1.1);
+}
+
+.cart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #e6e5e5;
+  color: rgba(0, 0, 0, 0.875);
+  border: 2px solid #4a90e2; /* Add a border to create the circle */
+  border-radius: 50%; /* Make it a circle */
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+body.dark-mode .cart-icon {
+  border: 2px solid #e0e0e0;
+  color: rgba(212, 212, 212, 0.875); /* Light gray border in dark mode */
+}
+
+.cart-icon:hover {
+  background: #4a90e2; /* Change background color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+
+body.dark-mode .cart-icon:hover {
+  background: #444; /* Dark background on hover in dark mode */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+
+.card h3 {
+  margin: 16px 0 8px;
+  font-size: 1.5em;
+  color: #333; /* Gray text color */
+}
+
+body.dark-mode .card h3 {
+  color: #e0e0e0;
+}
+
+.card p {
+  color: rgba(51, 51, 51, 0.7); /* Gray text color */
+  font-size: 1em;
+}
+
+body.dark-mode .card p {
+  color: rgba(224, 224, 224, 0.7);
+}
+
+.view-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+  background-color: #357ab8;
+}
+
+body.dark-mode .view-button {
+  background-color: #444444;
+}
+
+body.dark-mode .view-button:hover {
+  background-color: #555;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357ab8;
+}
+
+body.dark-mode button {
+  background-color: #444;
+}
+
+body.dark-mode button:hover {
+  background-color: #555;
+}
